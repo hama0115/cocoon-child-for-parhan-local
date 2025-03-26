@@ -16,7 +16,7 @@
     <?php endif; ?>
 
     <?php //対象のサブフィールド(画像)が存在する場合に出力
-    $image = get_sub_field('area-illutstration');
+    $image = get_sub_field('area-illustration');
     if(!empty($image)):
     ?>
       <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
