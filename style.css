@@ -16,7 +16,8 @@ Version:    1.1.3
 /*必要ならばここにコードを書く*/
 
 /*
-親テーマにならってPCファーストで記述 
+親テーマにならってPCファーストで記述
+SP版は834px以下の部分を記述
 */
 
 /*---- 全体 ----*/
@@ -171,7 +172,7 @@ padding: 10px 0;
 	background-color: #fff;
 }
 
-/* 個別投稿ページ */
+/*-- 個別投稿ページ --*/
 
 .article h2 {
   padding: 0.25em 0.5em;
@@ -235,14 +236,21 @@ padding: 10px 0;
 }
 
 .navi-footer-in a {
-	font-size: 1.3rem;
-	
+	font-size: 1.3rem;	
 	/* 親テーマで黒指定されているのを変更 */
 	color: inherit;
 }
 
 .copyright {
 	margin-top: 20px;
+}
+
+/*-- プラグイン「ACF」(ACF) --*/
+.parking-info-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  column-gap: 30px;
 }
 
 /************************************
