@@ -245,12 +245,42 @@ padding: 10px 0;
 	margin-top: 20px;
 }
 
-/*-- プラグイン「ACF」(ACF) --*/
+/*-- プラグイン「ACF」(カスタムフィールド) --*/
+
+/* パーキング情報 */
 .parking-info-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
   column-gap: 30px;
+}
+.parking-info-container img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+.parking-text-container dl {
+  /* cocoonで付与されているmargin?をリセット */
+  margin-bottom: 1em;
+}
+
+/* 飲食店情報 */
+.restaurant-info-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  column-gap: 30px;
+  row-gap: 20px;
+}
+.restaurant-info-container img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+.restaurant-text-container dl {
+  /* cocoonで付与されているmargin?をリセット */
+  margin-bottom: 0;
+  font-size: 0.8rem;
 }
 
 /************************************
