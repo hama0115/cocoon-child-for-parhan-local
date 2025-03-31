@@ -95,7 +95,7 @@ padding: 10px 0;
 	line-height: 50px;
 }
 
-/*-- コンテンツ全体 --*/
+/*-- コンテンツ全体(サイト全体に適用される部分あので慎重に!) --*/
 
 .main {
 	background-color: inherit;
@@ -103,6 +103,9 @@ padding: 10px 0;
 
 .sidebar {
 	background-color: inherit;
+
+  /* サイドバーの上辺をメインコンテンツに合わせる */
+  padding-top: 0;
 }
 
 /*-- アーカイブページ --*/
@@ -172,7 +175,16 @@ padding: 10px 0;
 	background-color: #fff;
 }
 
-/*-- 個別投稿ページ --*/
+/*-- 個別投稿ページ(single.php。body_classで付与されるクラスは「.single」) --*/
+
+.single .main {
+  background-color: #fff;
+
+  /* 親テーマを上書き */
+  border-radius: 10px;
+
+  margin-bottom: 30px;
+}
 
 .article h2 {
   padding: 0.25em 0.5em;
